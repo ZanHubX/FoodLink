@@ -1,8 +1,14 @@
 import React from 'react'
 
+import Navbar from './components/Home/NavBar'
+import Slider from './components/Home/Slider'
+
 const App = () => {
   return (
-    <div className='p-5'>App</div>
+    <div>
+      <Navbar/>
+      <Slider/>
+    </div>
   )
 }
 
