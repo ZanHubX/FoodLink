@@ -21,7 +21,7 @@ const Navbar = () => {
           <button
             type="button"
             onClick={toggleDropdown} // Toggle the dropdown on click
-            className="flex text-sm bg-gray-700 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+            className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
             id="user-menu-button"
             aria-expanded={isDropdownOpen}
             aria-haspopup="true"
