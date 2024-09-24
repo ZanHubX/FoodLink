@@ -8,7 +8,7 @@ function App() {
   return (
     <div className={`w-full p-4 ${isDarkMode ? "bg-slate-800" : "bg-white"}`}>
       <button onClick={() => setIsDarkMode(!isDarkMode)} className="mb-4">
-        Toggle Dark Mode
+        Dark Mode
       </button>
       <NavBar />
       <Slider />
