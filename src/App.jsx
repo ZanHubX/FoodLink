@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import NavBar from "./components/Home/NavBar";
 import Slider from "./components/Home/Slider";
-import { SunIcon,MoonIcon } from "@heroicons/react/16/solid";
+import { SunIcon, MoonIcon } from "@heroicons/react/16/solid";
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -20,7 +20,8 @@ function App() {
           )}
         </button>
       </div>
-      <NavBar />
+      {/* Pass isDarkMode prop */}
+      <NavBar isDarkMode={isDarkMode} />
       <Slider />
     </div>
   );

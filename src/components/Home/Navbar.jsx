@@ -7,7 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 
-export function NavBar() {
+export function NavBar({ isDarkMode }) {
   const [openNav, setOpenNav] = React.useState(false);
 
   React.useEffect(() => {
@@ -23,68 +23,101 @@ export function NavBar() {
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center gap-x-2 p-1 font-medium"
+        className={`flex items-center gap-x-2 p-1 font-medium ${
+          isDarkMode ? "text-white" : "text-black"
+        }`}
       >
-        {/* Your Icons */}
-        <a href="#" className="flex items-center text-black">
-          Pages
+        <a href="#" className="flex items-center">
+          Home
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center gap-x-2 p-1 font-medium"
+        className={`flex items-center gap-x-2 p-1 font-medium ${
+          isDarkMode ? "text-white" : "text-black"
+        }`}
       >
-        {/* Your Icons */}
-        <a href="#" className="flex items-center text-black">
-          Account
+        <a href="#" className="flex items-center">
+          About Us
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center gap-x-2 p-1 font-medium "
+        className={`flex items-center gap-x-2 p-1 font-medium ${
+          isDarkMode ? "text-white" : "text-black"
+        }`}
       >
-        {/* Your Icons */}
-        <a href="#" className="flex items-center text-black">
-          Blocks
+        <a href="#" className="flex items-center">
+          Restaurents
         </a>
       </Typography>
       <Typography
         as="li"
         variant="small"
         color="blue-gray"
-        className="flex items-center gap-x-2 p-1 font-medium"
+        className={`flex items-center gap-x-2 p-1 font-medium ${
+          isDarkMode ? "text-white" : "text-black"
+        }`}
       >
-        {/* Your Icons */}
-        <a href="#" className="flex items-center text-black">
-          Docs
+        <a href="#" className="flex items-center">
+          Contact Us
+        </a>
+      </Typography>
+      <Typography
+        as="li"
+        variant="small"
+        color="blue-gray"
+        className={`flex items-center gap-x-2 p-1 font-medium ${
+          isDarkMode ? "text-white" : "text-black"
+        }`}
+      >
+        <a href="#" className="flex items-center">
+          Blogs
         </a>
       </Typography>
     </ul>
   );
 
   return (
-    <Navbar className="mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 rounded-3xl">
+    <Navbar
+      className={`mx-auto max-w-screen-xl px-4 py-2 lg:px-8 lg:py-4 rounded-3xl shadow-lg backdrop-blur-[100px] ${
+        isDarkMode ? "bg-gray-900" : "bg-[white]/10"
+      } animate-float`}
+      style={{
+        animation: "float 3s ease-in-out infinite",
+      }}
+    >
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
         <Typography
           as="a"
           href="#"
-          className="mr-4 cursor-pointer py-1.5 font-bold text-2xl text-black"
+          className={`mr-4 cursor-pointer py-1.5 font-bold text-2xl ${
+            isDarkMode ? "text-white" : "text-black"
+          }`}
         >
           Food<span style={{ color: "#DC7F60" }}>Link</span>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <div className="flex items-center gap-x-1">
-          <Button variant="text" size="sm" className="hidden lg:inline-block">
+          <Button
+            variant="text"
+            size="sm"
+            className={`hidden lg:inline-block ${
+              isDarkMode ? "text-white" : "text-black"
+            }`}
+          >
             <span>Log In</span>
           </Button>
           <Button
-            variant="gradient"
+            variant="text"
             size="sm"
-            className="hidden lg:inline-block"
+            className={`hidden lg:inline-block ${
+              isDarkMode ? "text-white" : "text-black"
+            }`}
           >
             <span>Sign in</span>
           </Button>
