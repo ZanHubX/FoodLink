@@ -72,7 +72,7 @@ export function NavBar({ isDarkMode }) {
         variant="small"
         color="blue-gray"
         className={`flex items-center gap-x-2 p-1 font-medium ${
-          isDarkMode ? "text-white" : ""
+          isDarkMode ? "text-white" : "text-black"
         }`}
       >
         <a href="#" className="flex items-center">
