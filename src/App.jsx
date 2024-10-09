@@ -3,6 +3,8 @@ import NavBar from "./components/Home/NavBar";
 import Slider from "./components/Home/Slider";
 import { SunIcon, MoonIcon } from "@heroicons/react/16/solid";
 
+import Display from "./components/Home/Display";
+
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
@@ -23,6 +25,7 @@ function App() {
       {/* Pass isDarkMode prop */}
       <NavBar isDarkMode={isDarkMode} />
       <Slider />
+      <Display/>
     </div>
   );
 }

@@ -133,7 +133,7 @@ export function NavBar({ isDarkMode }) {
               className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke={isDarkMode ? "#ffffff" : "#000000"}
               strokeWidth={2}
             >
               <path
@@ -148,7 +148,7 @@ export function NavBar({ isDarkMode }) {
               className="h-6 w-6"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke={isDarkMode ? "#ffffff" : "#000000"}
               strokeWidth={2}
             >
               <path
