@@ -2,7 +2,7 @@ import React from 'react'
 
 const Display = () => {
   return (
-    <div>Show Hero Session</div>
+    <div>Show Hero</div>
   )
 }
 
