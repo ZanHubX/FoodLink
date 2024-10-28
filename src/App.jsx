@@ -13,7 +13,7 @@ function App() {
       <div className="flex justify-end mb-4">
         <button
           onClick={() => setIsDarkMode(!isDarkMode)}
-          className="p-2 bg-gray-300 rounded-full"
+          className="p-2 bg-gray-300 "
         >
           {isDarkMode ? (
             <SunIcon className="h-6 w-6 text-yellow-500" />
